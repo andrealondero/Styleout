@@ -125,40 +125,6 @@ public class SecondActivity extends AppCompatActivity {
             ImageAdapter imageAdapter = new ImageAdapter(this);
             viewPager.setAdapter(imageAdapter);
 
-            // bottoni tag on click cambia colore
-
-        ImageButton button;
-
-
-        }
-
-        public void onStart() {
-            super.onStart();
-
-        }
-
-        public void onRestart() {
-            super.onRestart();
-
-        }
-
-        public void onResume() {
-            super.onResume();
-
-        }
-
-        public void onPause() {
-            super.onPause();
-
-        }
-
-        public void onStop() {
-            super.onStop();
-
-        }
-
-        public void onDestroy() {
-            super.onDestroy();
 
         }
 

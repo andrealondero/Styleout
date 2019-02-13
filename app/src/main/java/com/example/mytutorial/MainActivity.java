@@ -5,45 +5,41 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 
+import android.widget.Button;
+import android.widget.CheckBox;
+
+
 public class MainActivity extends AppCompatActivity {
+
+    private View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void onStart() {
-        super.onStart();
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_main );
 
     }
+  //      Button b = (Button) findViewById(R.id.done);
+ /*       CheckBox ce = (CheckBox) findViewById(R.id.elegantaccess);
 
-    public void onRestart() {
-        super.onRestart();
+        b.setVisibility(b.INVISIBLE);
 
-    }
+        b.setOnClickListener(new View.OnClickListener()
+    {
+        if (cause) {
+            b.setVisibility( View.VISIBLE );
+        }
 
-    public void onResume() {
-        super.onResume();
-
-    }
-
-    public void onPause() {
-        super.onPause();
-
-    }
-
-    public void onStop() {
-        super.onStop();
-
-    }
-
-    public void onDestroy() {
-        super.onDestroy();
-
-    }
+        if (!cause) {
+            b.setVisibility( View.GONE );
+        }
+    } */
 
     public void onClick(View view) {
         startActivity(new Intent(MainActivity.this, SecondActivity.class));
+
+  //     b.setVisibility( View.VISIBLE );
     }
 }
+
+
